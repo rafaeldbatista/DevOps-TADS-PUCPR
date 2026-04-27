@@ -44,3 +44,5 @@ jobs:
           -X POST \
           -d "{\"content\": \"CI falhou!\n👤 Autor: ${{ github.actor }}\n🔗 Repo: ${{ github.repository }}\"}" \
           ${{ secrets.DISCORD_WEBHOOK }}
+
+          # adicionar comentarios
