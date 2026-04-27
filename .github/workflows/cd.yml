@@ -1,0 +1,18 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Simulando Deploy em Produção
+        run: |
+          echo "Conectando ao servidor de produção..."
+          echo "Instalando a nova versão da API de Tarefas..."
+          echo "Deploy realizado com sucesso para o ambiente de produção!"
